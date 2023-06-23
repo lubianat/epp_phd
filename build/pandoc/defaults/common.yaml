@@ -1,0 +1,14 @@
+---
+filters:
+  - pandoc-fignos
+  - pandoc-eqnos
+  - pandoc-tablenos
+  - pandoc-manubot-cite
+  - citeproc
+# Pandoc --defaults shared between Manubot output formats.
+from: markdown
+input-file: output/manuscript.md
+metadata:
+  csl: build/assets/usp_ime.csl
+  link-citations: true
+wrap: preserve
